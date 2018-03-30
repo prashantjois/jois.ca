@@ -1,4 +1,3 @@
 FROM nginx
 
-ADD . /var/www
-ADD site.conf /etc/nginx/sites-enabled/
+ADD www/ /usr/share/nginx/html/
