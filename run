@@ -1,0 +1,11 @@
+#!/bin/bash
+
+docker stop jois.ca
+docker rm jois.ca
+docker run -d \
+  --name jois.ca \
+  --expose 80 \
+  -e VIRTUAL_HOST="jois.ca" \
+  -e LETSENCRYPT_HOST="jois.ca" \
+  -e LETSENCRYPT_EMAIL="prashant@jois.ca" \
+  jois.ca
