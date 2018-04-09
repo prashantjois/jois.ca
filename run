@@ -5,7 +5,7 @@ docker rm jois.ca
 docker run -d \
   --name jois.ca \
   --expose 80 \
-  -e VIRTUAL_HOST="jois.ca" \
-  -e LETSENCRYPT_HOST="jois.ca" \
+  -e VIRTUAL_HOST="jois.ca,joi.sh,jois.cc,jois.io,prashantjois.com" \
+  -e LETSENCRYPT_HOST="jois.ca,joi.sh,jois.cc,jois.io,prashantjois.com" \
   -e LETSENCRYPT_EMAIL="prashant@jois.ca" \
   jois.ca
