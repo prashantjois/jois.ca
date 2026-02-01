@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
-@import url("fontawesome-all.min.css");
+/* CSS imports moved to HTML for better performance */
 
 /*
 	Aerial by HTML5 UP
@@ -138,8 +137,9 @@ input, select, textarea {
 			text-rendering: auto;
 			line-height: 1;
 			text-transform: none !important;
-			font-family: 'Font Awesome 5 Free';
+			font-family: 'Font Awesome 7 Free';
 			font-weight: 400;
+			content: var(--fa);
 		}
 
 		.icon > .label {
@@ -151,7 +151,7 @@ input, select, textarea {
 		}
 
 		.icon.brands:before {
-			font-family: 'Font Awesome 5 Brands';
+			font-family: 'Font Awesome 7 Brands';
 		}
 
 /* Wrapper */
@@ -227,6 +227,7 @@ input, select, textarea {
 	/* Set your background with this */
 
 		background: #348cb2 url("images/bg.jpg") bottom left;
+		background: #348cb2 url("images/bg.webp") bottom left;
 		background-repeat: repeat-x;
 		height: 100%;
 		left: 0;
